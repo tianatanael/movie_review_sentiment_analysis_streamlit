@@ -1,5 +1,5 @@
 import streamlit as st
-import pickle
+import joblib
 import re
 import nltk
 from nltk.corpus import stopwords
@@ -38,8 +38,8 @@ def data_cleaning_stop_words_modified(content):
   content = remove_stop_words_modified(content)
   return content
 
-tfidf = pickle.load("tfidf_final.pkl")
-rf_classifier = pickle.load("rf_classifier_final.pkl")
+tfidf = joblib.load("tfidf_final.pkl")
+rf_classifier = joblib.load("rf_classifier_final.pkl")
 
 st.title("Movie Review Sentiment Analysis Model")
 st.caption("Dibuat oleh Kelompok 10 kelas 4PTI1 untuk Ujian Akhir Semester Kecerdasan Buatan")
