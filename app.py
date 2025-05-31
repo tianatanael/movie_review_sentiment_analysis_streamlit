@@ -59,4 +59,4 @@ if review:
 
   st.text(f"Prediction: {sentiment}")
 
-st.caption('''Things to note: As of now, this model only works for reviews written in English.''')
+st.caption('''Something to note: As of now, this model only works for reviews written in English.''')
